@@ -1,124 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mingle</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./img/icon.png">
+
 </head>
 
 <body>
     <header>
-        <nav>
-            <img src="./img/logo mingle.jpg" alt="" width="150">
-            <h1> <a href="index.html">Mingle</a> </h1>
-            <div style="text-align:right">
-                <a href="">Email</a>
-                <a href="">Contraseña</a>
-                <a href="">Ingresar</a>
-            </div>
+        <div id="bannerSup">
+            <img id="logo" src="./img/logoMingle.png" alt="" height="150px">
+        </div>
+        <nav id="navSup">
+            <a href="index.html">Inicio</a>
+            <a href="">Ingresar</a>
+            <a href="
+            ">Unite al grupo</a>
+            <a href="#calendario">Eventos Próximos</a>
+            <a href="#quienesSomos">Quienes Somos</a>
+            <a href="#algunasSalidas">Algunas Salidas</a>
         </nav>
+        <div id="portada">
+            <h1>Mingle</h1>
+            <h2>Tu lugar de encuentros</h2>
+        </div>
     </header>
-
     <main>
+        <h3 id="calendario">Proximos Eventos</h3>
+
+        <table style="border: 2;">
+            <tr id="fechaEvento">
+                <th>10 de Agosto</th>
+                <th>22 de noviembre</th>
+                <th>5 de Diciembre</th>
+                <th>20 de Diciembre</th>
+            </tr>
+
+            <tr id="fotoEvento">
+                <td><img src="./img/Almuezo.jpg" alt="" height="150px"></td>
+                <td><img src=" ../" alt=""><img src="./img/Caminata.jpeg" alt="" height="150px"></td>
+                <td><img src="./img/Recital.jpg" alt="" height="150px"></td>
+                <td><img src="./img/Merienda.jpg" alt="" height="150px"></td>
+            </tr>
+            <tr id="tipoEvento">
+                <td>Almuerzo en Fridays Puerto Madero</td>
+                <td>Caminata reserva ecológica Costanera Norte</td>
+                <td>Recital de alguien en Luna Park</td>
+                <td>Merienda Fin de año en Café San Juan</td>
+            <tr id="masInfo">
+                <td><img src="./img/masInfoLogo.jpg" alt="" height="30px"><img src="./img/boton Voy.jpg" alt=""
+                        width="100px"></td>
+                <td><img src="./img/masInfoLogo.jpg" alt="" height="30px"><img src="./img/boton Voy.jpg" alt=""
+                        width="100px"></td>
+                <td><img src="./img/masInfoLogo.jpg" alt="" height="30px"><img src="./img/boton Voy.jpg" alt=""
+                        width="100px"></td>
+                <td><img src="./img/masInfoLogo.jpg" alt="" height="30px"><img src="./img/boton Voy.jpg" alt=""
+                        width="100px"></td>
+            </tr>
+
+
+            <tr id="yaSomos">
+                <td>Ya somos 5</td>
+                <td>Ya somos 6</td>
+                <td>Ya somos 10</td>
+                <td>Ya somos 9</td>
+            </tr>
+
+            <tr id="mapa">
+                <td><iframe width="210px" height="100px"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.789130675705!2d-58.36856895989949!3d-34.60949337306472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335885c0be601%3A0x2140ebe9728237a3!2sFriday%E2%80%99s%20Puerto%20Madero!5e0!3m2!1ses-419!2sar!4v1711060291289!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td><iframe width="210px" height="100px"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.592653354727!2d-58.44623355990255!3d-34.53854697309019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7df6bb24629%3A0x3539d6bdcd7df9b5!2sReserva%20Ecol%C3%B3gica%20Ciudad%20Universitaria-Costanera%20Norte!5e0!3m2!1ses-419!2sar!4v1711061069361!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td><iframe width="210px" height="100px"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0858143802843!2d-58.371487359899824!3d-34.60199147306753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335325f19f9a3%3A0xfd34b93fba734a98!2sLuna%20Park!5e0!3m2!1ses-419!2sar!4v1711061274403!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td><iframe width="210px" height="100px"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26266.355862999466!2d-58.40820478916015!3d-34.621997799999974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2cd4196a11%3A0xbd9cf9a4073f702c!2sCaf%C3%A9%20San%20Juan!5e0!3m2!1ses-419!2sar!4v1711061331125!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+
+
+            </tr>
+        </table>
+
+        <div id="algunasSalidas"></div>
+
+        <h3>Algunas salidas</h3>
+        <video width="80%" controls>
+            <source src="https://www.youtube.com/watch?v=4qz6x8y3tNw&pp=ygUQdmlkZW8gZGUgZmllc3Rhcw%3D%3D"
+                type="video_00">
+        </video>
+        </div>
         <br>
-        <div>
-            <div style="text-align:left">
-                <img src="./Img/pexels-fauxels-3184183.jpg" alt="ilustracion_de_grupo_00" width="370">
-                <img src="./Img/pexels-min-an-853168.jpg" alt="ilustracion_de_grupo_01" width="370">
-                <img src="./Img/pexels-photo-16225827.jpeg" alt="ilustracion_de_grupo_02" width="370">
-                <img src="./Img/pexels-sebastian-ervi-1763075.jpg" alt="ilustracion_de_grupo_03" width="350">
-                <img src="./Img/pexels-elevate-1267697.jpg" alt="ilustracion_de_grupo_03" width="373">
-            </div>
-            <div style="text-align:right">
-                <h2>Quiero registrarme</h2>
-                <dl>
-                    <dt>Nombre</dt>
-                    <dt>Email</dt>
-                    <dt>Contraseña</dt>
-                    <dt>Fecha de nacimiento</dt>
-                    <dd>Dia</dd>
-                    <dd>Mes</dd>
-                    <dd>Año</dd>
 
-                    <a href="">REGISTRARME</a>
-                </dl>
-            </div>
-        </div>
 
-        <div>
-            <h2><b>MINGLE tu web para encuentros: </b></h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolore perspiciatis est, incidunt ex
-                facere veritatis. Iusto magnam temporibus assumenda recusandae, nulla repellendus autem non laborum
-                dolore voluptas consequuntur maxime!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni quis aliquam, fuga delectus, vel
-                ratione sed et perspiciatis nostrum itaque non amet, in laboriosam distinctio corporis illo iste! Dicta.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, non totam voluptas voluptatibus
-                id et, quae vitae ipsum aliquid quos eligendi natus iusto consectetur aperiam quaerat, iste fugiat
-                consequatur exercitationem!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam harum minus veniam, exercitationem
-                illum cumque esse corrupti porro est aliquid, nihil mollitia impedit sequi tempora amet. Placeat
-                reprehenderit odit non?
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore expedita ipsa placeat cum qui itaque
-                assumenda tenetur ad officiis, voluptas cumque. Accusantium quisquam omnis harum reiciendis quae
-                accusamus id beatae.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repellendus assumenda esse fugit
-                error quas tenetur nulla vero iusto harum! Atque ipsum consequuntur alias assumenda eos. Architecto
-                tempore at illum.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facilis, repudiandae quaerat
-                consequuntur error, veritatis consectetur rem libero deserunt ullam dignissimos impedit vel quidem? A
-                nemo illum nesciunt voluptatem quis.
-            </p> <br> <br>
-        </div>
+        <h3 id="quienesSomos"> Mingle tu Web para encuentros grupales</h3>
+        <p>Nuestro obejtivo es que conozcas un grupo de gente que le guste lo mismo que a vos y organicen salidas en
+            grupo.
+            Cenas, recitales, bailes, caminatas, viajes, lo que surja!
+            En Mingle garantizamos la seguridad de que vas a conocer en persona a la misma con la que te estás
+            mensajeando.
+            Tenemos un riguroso filtro de ingreso nuevos miembros.</p>
 
-        <div>
-            <h2><b>Sumante a los proximos encuentros!:</b></h2>
-            <table>
-                <tr>
-                    <th>Dia</th>
-                    <th>Mes</th>
-                    <th>Evento</th>
-                </tr>
-                <tr>
-                    <th>10</th>
-                    <th>Agosto</th>
-                    <th>Trekking</th>
-                </tr>
-                <tr>
-                    <th>22</th>
-                    <th>Noviembre</th>
-                    <th>Recital</th>
-                </tr>
-            </table>
-        </div>
-
-        <div style="text-align:right">
-            <h2>Mira algunos de nuestros encuentros!</h2>
-            <video width="700" controls>
-                <source src="https://www.youtube.com/watch?v=4qz6x8y3tNw&pp=ygUQdmlkZW8gZGUgZmllc3Rhcw%3D%3D" type="video_00">
-            </video> 
-        </div>
-
-        <div style="text-align:center">
-            <h4>Nuestras redes!</h4>
-            <nav>
-                <a href="">FaceBook</a>
-                <a href="">IG</a>
-                <a href="">Twitter</a>
-            </nav>
-        </div>
     </main>
-
     <footer>
-        <ul>
-            <li>
-                <a href="">Preguntas frecuentes</a>
-            </li>
-            <li>
-                <a href="">Quienes somos</a>
-            </li>
-        </ul>
+        <nav id="navFooter">
+            <a href="">Preguntas Frequentes</a>
+            <a href="">Bases y Condiciones</a>
+            <a href="">Costo premium</a>
+
+        </nav>
+        <p id="copiright">Sitio creado por Pythoneers para Codo a Codo</p>
     </footer>
 </body>
 
