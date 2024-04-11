@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "truculenta", sans-serif;
+}
+
+/* -- HEADER -- */
+
+nav {
+    text-align: center;
+    background-color: #6331c8;
+
+}
+
+#bannerSup {
+    text-align: center;
+    background-color: #cbb7f2;
+}
+
+a {
+    color: white;
+}
+
+/* -- FOOTER -- */
+
+#copiright {
+    font-size: 80%;
+    text-align: center;
+}
+
+/* -- COMIENZA ESTILO DE BODY --*/
+
+h1 {
+    color: #6331c8;
+    font-size: 300%
+}
+
+h4 {
+    font-weight: 1
+}
+
+.panel {
+    text-align: center;
+    padding: 1%;
+    background-color: rgb(243, 249, 253);
+    
+}
+
+input {
+    padding: 1%;
+    border-radius: 30px;
+    outline: none;
+    border-style: none; 
+    background-color: rgb(229, 229, 255);
+}

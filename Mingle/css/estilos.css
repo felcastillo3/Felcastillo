@@ -6,7 +6,6 @@
 nav{
     text-align: center;
     background-color: #6331c8;
-
 }
 
 #bannerSup{
@@ -14,9 +13,15 @@ nav{
     background-color: #cbb7f2;
 }
 
+#bannerSup p{
+    border-radius: 30px;
+}
+
 a{
     color: white;
 }
+
+
 
 h1{
     color: #6331c8;
@@ -55,3 +60,4 @@ table{
     font-size: 80%;
     text-align: center;
 }
+
