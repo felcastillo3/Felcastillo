@@ -16,14 +16,19 @@
 </head>
 
 <body>
+    <script type="text/javascript">
+        var Sesion_abierta = false;
+        var Usuario = "";
+    </script>
+
     <header>
         <div id="bannerSup">
             <img id="logo" src="./img/logoMingle.png" alt="" height="150px">
-            <p class="form_paragraph" align="right">Inicio Sesión <a href="login.html">
-                <i class="material-symbols-outlined">
-                     person_edit
-                </i></a>
+
+            <p class="form_login">Inicio Sesión <a href="login.html">
+                <span class="material-symbols-outlined">person_edit</span></a>
             </p>
+    
         </div>
 
         <nav id="navSup">
@@ -131,6 +136,8 @@
         </nav>
         <p id="copiright">Sitio creado por Pythoneers para Codo a Codo</p>
     </footer>
+
+    <script src="/js/app.js"></script>
 </body>
 
 </html>

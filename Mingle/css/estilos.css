@@ -13,8 +13,10 @@ nav{
     background-color: #cbb7f2;
 }
 
-#bannerSup p{
+#bannerSup > p{
+    display: none;
     border-radius: 30px;
+    text-align: right;
 }
 
 a{
@@ -42,6 +44,7 @@ h2{
     ;
 }
 
+
 h3{
     text-align: center;
     font-size: 100%;
@@ -60,4 +63,5 @@ table{
     font-size: 80%;
     text-align: center;
 }
+
 
