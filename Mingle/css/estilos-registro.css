@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    /* Tipo de fuente */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    align-items: center; /* Alineamos verticalmente */
+    justify-content: center; /* Alineamos horizontalmente */
+    height: 100vh;
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;      /* La imagen se ajusta al tamañano del contenedor */
+    background-position: center; /* La imagen se centra en el contenedor */
+}
+
+.flecha-volver {
+    position: absolute;
+    top: 2%;
+    left: 1.2%;
+    color: #525558;
+    background-color: white;
+    border-radius: 10px;
+    font-size: x-large;
+    padding: 7px;
+}
+
+.flecha-volver i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: 700;
+}
+
+.flecha-volver:hover{
+    background-color: #c2e0fd;
+    transition: 400ms ease;
+}
+
+
+.contenedor {   /* Contenedor padre de "lado-izquierdo" y "lado-derecho" */
+    display: flex;     /* Utilizamos flex para alinear los contenedores verticalmente */
+    max-width: 52rem;  /* Ancho maximo, para que la caja no crezca al momento de modificar elementos */
+    min-height: 500px; /* Alto maximo, tambien para que no crezca */
+    border-radius: 25px;
+    /* Sombra */
+    -webkit-box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.48);
+    box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.48);
+    
+    margin: 1rem;
+}
+
+.lado-izquierdo {
+    display: flex; 
+    align-items: center; /* Alineamos verticalemnte */
+    text-align: center;
+    width: 35%; /* Ocupa un 35% del contenedor padre (".contenedor") */
+    background-color: #c2e0fd;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.info {
+    width: 100%;
+    padding: 0.2rem; /* Padding entre los elementos y contenedor */
+}
+
+.info h2 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #525558;
+}
+
+.info p {
+    color: #6f7377;
+    margin-top: 1.5rem;
+    padding: 17px;
+}
+
+.lado-derecho {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alineamos horizontalmente */
+    text-align: center;
+    width: 70%;  /* Ocupa un 70% del contenedor padre (".contenedor") */
+    background-color: #f9fbfe;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    /* Sombra lado izquierdo de la caja */
+    -webkit-box-shadow: -14px 0px 5px -11px rgba(0,0,0,0.28);
+    -moz-box-shadow: -14px 0px 5px -11px rgba(0,0,0,0.28);
+    box-shadow: -14px 0px 5px -11px rgba(0,0,0,0.28);
+}
+
+.formulario {
+    padding: 0 1rem;
+}
+
+.formulario h2 {
+    border-bottom: solid 1px rgb(218, 218, 218); /* Raya */
+    color: #525558;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.form {
+    margin: 3rem 0 0 0; /* 3rem en top, y 0 en el resto de los lados */
+}
+
+.form label {
+    display: flex;
+    align-items: center;  /* Para alinear horizantalmente los iconos con label */
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    background-color: #fff;
+    /* Sombra */
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form label input {
+    width: 100%;     /* Ocupa el 100% de ancho del contenedor (en este caso es "label") */
+    padding: 0.5rem; /* Relleno del input */
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;  /* El mismo que el border-radius de ".form label" */
+    color: #90969c;
+}
+
+.form label i { /* Iconos */
+    color: #a7a7a7;
+    margin: 9px;
+}
+
+.form input[type="submit"] { /* Boton de Registrarme, con selector de atributo con valor "submit" */
+    border-radius: 20px;
+    border: none;
+    padding: 0.7rem 1.3rem; /* 0.6 de alto y 1 de ancho por lados */
+    cursor: pointer;      /* El cursor se transforma en "mano" al pasar arriba del boton */
+    margin-top: 2rem;
+    color: #525558;
+    font-weight: 600;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.22);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.22); 
+}
+
+.form input[type="submit"]:hover {
+    background-color: #c2e0fd;
+    transition: 400ms ease;
+    color: black;
+    /* Se opaca mas la sombra*/
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.76);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.76);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.76);
+}

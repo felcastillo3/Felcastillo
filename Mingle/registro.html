@@ -4,98 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-    <link rel="stylesheet" href="./css/estilosRegistro.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" />    
+    <title>Mingle</title>
+    <link rel="stylesheet" href="css/estilosRegistro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Iconos -->
 </head>
 
 <header>
-    <nav id="navSup">
-        <a href="index.html"><i class="material-symbols-outlined">home</i>Home</a>
-    </nav>
 
 </header>
 
 <body>
-    <div class="panel">
-        <h1>Mingle</h1>
-        <br>
-        <div id="div1">
-            <h2>Crea un usuario</h2>
-            <h4>Es rapido y facil.</h4>
-            <br>
-
-                
-
-            <div>
-                <form action="" class="formContenido">
-                    <i class="fa-solid fa-user"></i> <!-- icono usser -->
-                    <input type="text" name="nombre" id="nombre" maxlength="20" required placeholder="Nombre">
-                    <input type="text" name="apellido" id="apellido" maxlength="13" required placeholder="Apellido">
-                    <br><br>
-                    <div id="div2">
-                        <i class="fa-solid fa-envelope"></i> <!-- icono de email -->
-                        <input type="email" name="email" id="email" required placeholder="Correo electronico">
-                        <br><br>
-                        <i class="fa-solid fa-key"></i> <!-- icono contraseña -->
-                        <input type="password" maxlength="15" required placeholder="Contraseña">
-                        <br><br>
-                        <i class="fa-solid fa-phone"></i> <!-- icono telefono -->
-                        <input type="text" name="numero" id="numero" required placeholder="Telefono">
-                        <br><br>
-                        <label for="fechaNacimiento">Fecha de nacimiento</label>
-                        <br>
-                        <input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
-                        <br><br>
-                        <label for="provincia">Provincia</label required>
-                        <br>
-                        <select name="provincia" id="provincia">
-                            <option value="bue" name="provincia">Buenos aires</option>
-                            <option value="cata" name="provincia">Catamarca</option>
-                            <option value="cha" name="provincia">Chaco</option>
-                            <option value="chu" name="provincia">Chubut</option>
-                            <option value="cord" name="provincia">Cordoba</option>
-                            <option value="corr" name="provincia">Corrientes</option>
-                            <option value="ent" name="provincia">Entre Rios</option>
-                            <option value="for" name="provincia">Formosa</option>
-                            <option value="Ju" name="provincia">Jujuy</option>
-                            <option value="lap" name="provincia">La Pampa</option>
-                            <option value="lar" name="provincia">La Rioja</option>
-                            <option value="men" name="provincia">Mendoza</option>
-                            <option value="mi" name="provincia">Misiones</option>
-                            <option value="neu" name="provincia">Neuquen</option>
-                            <option value="rio" name="provincia">Rio Negro</option>
-                            <option value="sal" name="provincia">Salta</option>
-                            <option value="sanj" name="provincia">San Juan</option>
-                            <option value="sanl" name="provincia">San Luis</option>
-                            <option value="santac" name="provincia">Santa Cruz</option>
-                            <option value="santaf" name="provincia">Santa Fe</option>
-                            <option value="santi" name="provincia">Santiago del Estero</option>
-                            <option value="tie" name="provincia">Tierra del Fuego</option>
-                            <option value="tuc" name="provincia">Tucuman</option>
-                        </select>
-                        <br><br>
-                        <input type="text" name="localidad" id="localidad" maxlength="15" required
-                            placeholder="Localidad">
-                    </div>
-                    <br><br>
-                    <input type="button" value="Registrarte">
+    <div id="registro">
+    <div class="flecha-volver">
+        <a href="index.html"><i class='bx bx-left-arrow-alt'></i></a>
+    </div>
+    <div class="contenedor"> <!-- Contenedor padre que tiene a "lado izquierdo" y "lado derecho" -->
+        <div class="lado-izquierdo"> <!-- Contenedor de "info", que utilizamos para centrar-->
+            <div class="info"> <!-- Contenedor de los elementos -->
+                <h2>Unirme a Mingle</h2>
+                <p>Conéctate con personas que comparten tus mismos intereses.</p>
+            </div>
+        </div>
+        <div class="lado-derecho"> <!-- Contenedor derecho -->
+            <div class="formulario"> <!-- Contenedor de los elementos -->
+                <h2>Crear una Cuenta</h2>
+                <form class="form" action="">
+                    <label for="">
+                        <i class='bx bx-user'></i> <!-- Icono -->
+                        <input type="text" placeholder="Nombre">
+                    </label>
+                    <label for="">
+                        <i class='bx bx-envelope'></i> <!-- Icono -->
+                        <input type="text" placeholder="Correo electronico">
+                    </label>
+                    <label for="">
+                        <i class='bx bx-lock'></i> <!-- Icono -->
+                        <input type="password" placeholder="Contraseña">
+                    </label>
+                    <label for="">
+                        <i class='bx bx-phone'></i> <!-- Icono -->
+                        <input type="email" placeholder="Telefono">
+                    </label>
+                    <input type="submit" value="Registrarme">
                 </form>
             </div>
         </div>
     </div>
-</body>
-<br>
-<footer>
-    <nav id="navFooter">
-        <a href="">Preguntas Frequentes</a>
-        <a href="">Bases y Condiciones</a>
-    </nav>
-    <p id="copiright">Sitio creado por Pythoneers para Codo a Codo</p>
+    </div>
 
-</footer>
+    <footer>
+        <p>Sitio creado por Pythoneers para Codo a Codo 2024</p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
 
 </html>

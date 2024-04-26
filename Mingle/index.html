@@ -5,139 +5,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mingle</title>
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/estilosIndex.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="./img/icon.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" />
 </head>
 
 <body>
-    <script type="text/javascript">
-        var Sesion_abierta = false;
-        var Usuario = "";
-    </script>
-
     <header>
         <div id="bannerSup">
             <img id="logo" src="./img/logoMingle.png" alt="" height="150px">
 
-            <p class="form_login">Inicio Sesión <a href="login.html">
-                <span class="material-symbols-outlined">person_edit</span></a>
-            </p>
-    
         </div>
 
-        <nav id="navSup">
-            <a href="index.html"><i class="material-symbols-outlined">home</i>Home</a>
-            <a href="registro.html"><i class="material-symbols-outlined">how_to_reg</i>Registrarse </a>
-            <a href="#calendario"><i class="material-symbols-outlined">event_list</i>Eventos Próximos</a>
-            <a href="#quienesSomos"><i class="material-symbols-outlined">groups</i>Quienes Somos</a>
-            <a href="#algunasSalidas"><i class="material-symbols-outlined">landslide</i>Algunas Salidas</a>
-        </nav>
-        <div id="portada">
-            <h1>Mingle</h1>
-            <h2>Tu lugar de encuentros</h2>
-        </div>
     </header>
     <main>
-        <h3 id="calendario">Proximos Eventos</h3>
+        <nav class="navSup"> <!-- VA EN EL MAIN EL NAV PARA QUE SE PEGUE AL TECHO DEL NAVEGADOR-->
+            <div class="linkNavSup">
+                <a href="#bannerSup" class="navSup">
+                    <i class="material-symbols-outlined">home</i> Home</a>
+            </div>
+            <!-- ME TOMA EL ICONO Y EL TEXTO COMO DOS LINKS -->
 
-        <table style="border: 2;">
-            <tr id="fechaEvento">
-                <th>10 de Agosto</th>
-                <th>22 de noviembre</th>
-                <th>5 de Diciembre</th>
-                <th>20 de Diciembre</th>
-            </tr>
+            <div class="linkNavSup">
+                <a href="#calendario"><i class="material-symbols-outlined">event_list</i> Eventos Próximos</a>
+            </div>
+            <div class="linkNavSup"><a href="#algunasSalidas"><i class="material-symbols-outlined">landslide</i> Algunas
+                    Salidas</a>
+            </div>
+            <div class="linkNavSup"><a href="#quienesSomos"><i class="material-symbols-outlined">groups</i> Quienes
+                    Somos</a>
+            </div>
+            <div class="linkNavSup"><a href="login1.html"><i class="material-symbols-outlined">
+                person_edit
+            </i> Inicio Sesión/Registrarse</a>
+            </div>
+        </nav>
 
-            <tr id="fotoEvento">
-                <td><img src="./img/Almuezo.jpg" alt="" height="150px"></td>
-                <td><img src=" ../" alt=""><img src="./img/Caminata.jpeg" alt="" height="150px"></td>
-                <td><img src="./img/Recital.jpg" alt="" height="150px"></td>
-                <td><img src="./img/Merienda.jpg" alt="" height="150px"></td>
-            </tr>
-            <tr id="tipoEvento">
-                <td>Almuerzo en Fridays Puerto Madero</td>
-                <td>Caminata reserva ecológica Costanera Norte</td>
-                <td>Recital de alguien en Luna Park</td>
-                <td>Merienda Fin de año en Café San Juan</td>
-            <tr id="masInfo">
-                <td><img src="./img/masInfoLogo.jpg" alt="" height="30px"><img src="./img/boton Voy.jpg" alt=""
-                        width="100px"></td>
-                <td><img src="./img/masInfoLogo.jpg" alt="" height="30px"><img src="./img/boton Voy.jpg" alt=""
-                        width="100px"></td>
-                <td><img src="./img/masInfoLogo.jpg" alt="" height="30px"><img src="./img/boton Voy.jpg" alt=""
-                        width="100px"></td>
-                <td><img src="./img/masInfoLogo.jpg" alt="" height="30px"><img src="./img/boton Voy.jpg" alt=""
-                        width="100px"></td>
-            </tr>
+        <div id="portada">
+            <h1>Mingle</h1>
+            <p class="frase">Tu lugar de encuentros</p>
+        </div> <!--PORTADA-->
 
-
-            <tr id="yaSomos">
-                <td>Ya somos 5</td>
-                <td>Ya somos 6</td>
-                <td>Ya somos 10</td>
-                <td>Ya somos 9</td>
-            </tr>
-
-            <tr id="mapa">
-                <td><iframe width="210px" height="100px"
+        <div> <!--EVENTOS-->
+            <h3 id="calendario">Proximos Eventos</h3>
+            <div id="tarjetasEventos">
+                <div class="evento">
+                    <h3 class="fechaEvento">10 de Agosto</h3>
+                    <img src="./Img/Almuezo.jpg" alt="" class="fotoEvento">
+                    <p class="tipoEvento">Almuerzo en Fridays Puerto Madero</p>
+                    <div class="botones">
+                        <img src="./img/masInfoLogo.jpg" alt="" class="masInfo">
+                        <img src="./img/boton Voy.jpg" alt="" class="meSumo">
+                    </div>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.789130675705!2d-58.36856895989949!3d-34.60949337306472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335885c0be601%3A0x2140ebe9728237a3!2sFriday%E2%80%99s%20Puerto%20Madero!5e0!3m2!1ses-419!2sar!4v1711060291289!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- Se enciman con las tarjetas de abajo-->
+                </div>
+                <div class="evento">
+                    <h3 class="fechaEvento">20 de Agosto</h3>
+                    <img src="./Img/Almuezo.jpg" alt="" class="fotoEvento">
+                    <p class="tipoEvento">Almuerzo en Fridays Puerto Madero</p>
+                    <div class="botones">
+                        <img src="./img/masInfoLogo.jpg" alt="" class="masInfo">
+                        <img src="./img/boton Voy.jpg" alt="" class="meSumo">
+                    </div>
+                    <iframe class="mapa"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.789130675705!2d-58.36856895989949!3d-34.60949337306472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335885c0be601%3A0x2140ebe9728237a3!2sFriday%E2%80%99s%20Puerto%20Madero!5e0!3m2!1ses-419!2sar!4v1711060291289!5m2!1ses-419!2sar"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </td>
-                <td><iframe width="210px" height="100px"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.592653354727!2d-58.44623355990255!3d-34.53854697309019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7df6bb24629%3A0x3539d6bdcd7df9b5!2sReserva%20Ecol%C3%B3gica%20Ciudad%20Universitaria-Costanera%20Norte!5e0!3m2!1ses-419!2sar!4v1711061069361!5m2!1ses-419!2sar"
+                </div>
+                <div class="evento">
+                    <h3 class="fechaEvento">15 de Agosto</h3>
+                    <img src="./Img/Almuezo.jpg" alt="" class="fotoEvento">
+                    <p class="tipoEvento">Almuerzo en Fridays Puerto Madero</p>
+                    <div class="botones">
+                        <img src="./img/masInfoLogo.jpg" alt="" class="masInfo">
+                        <img src="./img/boton Voy.jpg" alt="" class="meSumo">
+                    </div>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.789130675705!2d-58.36856895989949!3d-34.60949337306472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335885c0be601%3A0x2140ebe9728237a3!2sFriday%E2%80%99s%20Puerto%20Madero!5e0!3m2!1ses-419!2sar!4v1711060291289!5m2!1ses-419!2sar"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </td>
-                <td><iframe width="210px" height="100px"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0858143802843!2d-58.371487359899824!3d-34.60199147306753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335325f19f9a3%3A0xfd34b93fba734a98!2sLuna%20Park!5e0!3m2!1ses-419!2sar!4v1711061274403!5m2!1ses-419!2sar"
+                </div>
+                <div class="evento">
+                    <h3 class="fechaEvento">30 de Agosto</h3>
+                    <img src="./Img/Almuezo.jpg" alt="" class="fotoEvento">
+                    <p class="tipoEvento">Almuerzo en Fridays Puerto Madero</p>
+                    <div class="botones">
+                        <img src="./img/masInfoLogo.jpg" alt="" class="masInfo">
+                        <img src="./img/boton Voy.jpg" alt="" class="meSumo">
+                    </div>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.789130675705!2d-58.36856895989949!3d-34.60949337306472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335885c0be601%3A0x2140ebe9728237a3!2sFriday%E2%80%99s%20Puerto%20Madero!5e0!3m2!1ses-419!2sar!4v1711060291289!5m2!1ses-419!2sar"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </td>
-                <td><iframe width="210px" height="100px"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26266.355862999466!2d-58.40820478916015!3d-34.621997799999974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2cd4196a11%3A0xbd9cf9a4073f702c!2sCaf%C3%A9%20San%20Juan!5e0!3m2!1ses-419!2sar!4v1711061331125!5m2!1ses-419!2sar"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                </div>
+            </div>
+        </div><!--EVENTOS-->
+<br> <!-- Sin esto se se me enciman las cosas-->
+        <div id="algunasSalidas">
+            <h3>Algunas salidas</h3>
+            <video width="80%" controls>
+                <source src="https://www.youtube.com/watch?v=4qz6x8y3tNw&pp=ygUQdmlkZW8gZGUgZmllc3Rhcw%3D%3D"
+                    type="video_00">
+            </video>
+        </div><!--ALGUNAS SALIDAS-->
 
+        <div>
+            <h3 id="quienesSomos"> Mingle tu Web para encuentros grupales</h3>
+            <p>Nuestro objetivo es que conozcas un grupo de gente que le guste lo mismo que a vos y organicen salidas en
+                grupo.
 
-            </tr>
-        </table>
-
-        <div id="algunasSalidas"></div>
-
-        <h3>Algunas salidas</h3>
-        <video width="80%" controls>
-            <source src="https://www.youtube.com/watch?v=4qz6x8y3tNw&pp=ygUQdmlkZW8gZGUgZmllc3Rhcw%3D%3D"
-                type="video_00">
-        </video>
-        </div>
-        <br>
-
-
-        <h3 id="quienesSomos"> Mingle tu Web para encuentros grupales</h3>
-        <p>Nuestro objetivo es que conozcas un grupo de gente que le guste lo mismo que a vos y organicen salidas en
-            grupo.
-            Cenas, recitales, bailes, caminatas, viajes, lo que surja!
-            En Mingle garantizamos la seguridad de que vas a conocer en persona a la misma con la que te estás
-            mensajeando.
-            Tenemos un riguroso filtro de ingreso nuevos miembros.</p>
+                Cenas, recitales, bailes, caminatas, viajes lo que surja!
+                En Mingle garantizamos la seguridad de que vas a conocer en persona a la misma con la que te estás
+                mensajeando. Y para ello tenemos un riguroso filtro de ingreso miembros.</p>
+        </div> <!--QUIENES SOMOS-->
 
     </main>
     <footer>
-        <nav id="navFooter">
-            <a href="">Preguntas Frequentes</a>
-            <a href="">Bases y Condiciones</a>
-        </nav>
-        <p id="copiright">Sitio creado por Pythoneers para Codo a Codo</p>
+        <p>Sitio creado por Pythoneers para Codo a Codo 2024</p>
     </footer>
-
-    <script src="/js/app.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

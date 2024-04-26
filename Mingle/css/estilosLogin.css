@@ -1,125 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@300;400;700&display=swap')
-
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "truculenta", sans-serif;
+    font-weight: 600;
 }
 
-body{
-    font-family: "Roboto", sans-serif;
+body {
     background-color: #e5e5f7;
-    background-image:  radial-gradient(#cc5bc7 0.5px, transparent 0.5px), radial-gradient(#cc5bc7 0.5px, #e5e5f7 0.5px);
+    background-image: radial-gradient(#cc5bc7 0.5px, transparent 0.5px), radial-gradient(#cc5bc7 0.5px, #e5e5f7 0.5px);
     background-size: 20px 20px;
-    background-position: 0 0,10px 10px;
-    display: flex;
-    min-height: 100vh;
+    background-position: 0 0, 10px 10px;
+
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    /* La imagen se ajusta al tamañano del contenedor */
+    background-position: center;
+    /* La imagen se centra en el contenedor */
+    justify-content: center;
+    align-items: center;
 }
 
-.form{
-    background-color: #fff;
-    margin: auto;
-    width: 90%;
-    max-width: 400px;
-    padding: 4.5em 3em;
+#flecha-volver {
+    position: absolute;
+    top: 2%;
+    left: 1.2%;
+    color: #525558;
+    background-color: white;
     border-radius: 10px;
-    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
-    text-align: center;
+    font-size: x-large;
+    padding: 7px;
 }
 
-.form__menu{
-    text-align: right;
-}
-.form__title{
-    font-size: 2rem;
-    margin-bottom: .5em;
-}
-
-.form__paragraph{
-    font-weight: 300;
-}
-
-.form__link{
-    font-weight: 400;
+#flecha-volver i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: black;
+    font-weight: 700;
 }
 
-.form_container{
-    margin-top: 3em;
-    display: grid;
-    gap: 2.5em;
+#flecha-volver:hover {
+    background-color: #c2e0fd;
+    transition: 400ms ease;
 }
 
-.form__group{
-    position: relative;
-    --color: #5757577e; 
+#contenedor {
+    display: flex;
+    border: black;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    /* Alineamos horizontalmente */
+    text-align: center;
+    width: 70%;
+    background-color: #f9fbfe;
+    border-radius: 24px;
+    /* Sombra lado izquierdo de la caja */
+    -webkit-box-shadow: -14px 0px 5px -11px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: -14px 0px 5px -11px rgba(0, 0, 0, 0.28);
+    box-shadow: -14px 0px 5px -11px rgba(0, 0, 0, 0.28);
 }
 
-.form__input{
-    width: 100%;
-    background: none;
-    color: #706c6c;
-    font-size: 1rem;
-    padding: .6em .3em;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid var(--color);
-    font-family: "Roboto", sans-serif;    
+#contenedor h2 {
+    font-weight: 600;
+    font-style: normal;
+    border-bottom: solid 1px rgb(218, 218, 218);
+    /* Raya */
+    color: #525558;
+    font-size: 2.3rem;
 }
 
-.form__input:not(:placeholder-shown){
-    color: #4d4d4d;   
-}    
-
-.form__input:focus + .form__label,
-.form__input:not(:placeholder-shown) + .form__label{
-    transform: translateY(-12px) scale(.7);
-    transform-origin: left top;
-    color: #3866f2;
+#contenedor1 {
+    display: flex;
+    border: black;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    /* Alineamos horizontalmente */
+    text-align: center;
+    width: 70%;
+    background-color: #f9fbfe;
+    border-radius: 24px;
+    /* Sombra lado izquierdo de la caja */
+    -webkit-box-shadow: -14px 0px 5px -11px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: -14px 0px 5px -11px rgba(0, 0, 0, 0.28);
+    box-shadow: -14px 0px 5px -11px rgba(0, 0, 0, 0.28);
 }
 
-.form__label{
-    color: var(--color);
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    transform: translateY(10px);
-    transition: transform .5s, color .3s;
-}
-
-.form__submit{
-    background: #3866f2;
-    color: #fff;
-    font-family: "Roboto", sans-serif;    
-    font-weight: 300;
-    font-size: 1rem;
-    padding: .8em 0;
-    border: none;
-    border-radius: .5em;
-}
-
-.form__line{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #3866f2;
-    transform: scale(0);
-    transform: left bottom;
-    transition: transform .4s;
-}
-
-.form__input:focus ~ .form__line,
-.form__input:not(:placeholder-shown) ~ .form__line{
-    transform: scale(1);   
-}    
-
-@media (max-width:425px){
-
-    .form__title{
-        font-size: 1.8rem;
-    }
+#contenedor1 h2 {
+    font-weight: 600;
+    font-style: normal;
+    border-bottom: solid 1px rgb(218, 218, 218);
+    /* Raya */
+    color: #525558;
+    font-size: 2.3rem;
 }

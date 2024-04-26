@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mingle</title>
+    <link rel="stylesheet" href="css/estilos-login1.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Iconos -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- Bootstrap -->
+</head>
+
+<header>
+    <div class"row" id="flecha-volver">
+        <a href="index.html"><i class='bx bx-left-arrow-alt'></i></a>
+    </div> 
+</header>
+
+<body>
+    <div class="container" id="contenedor"> <!-- Contenedor padre que tiene a "lado izquierdo" y "lado derecho" -->
+        
+		<form action="login1.html" class="row g-3" id="lado-izquierdo" >
+			<div class="col-3" id="info"> <!-- Contenedor de "info", que utilizamos para centrar-->
+                <h2>Ingresar a Mingle</h2>
+                <p>Conéctate con personas que comparten tus mismos intereses.</p>
+			    <button type="submit" class="btn btn-primary">Ingresar</button>
+            </div>
+		</form>
+		<!-- lado derecho lo hacemos con validación de boostrap, sacando la validación por navegador -->
+		<form class="row g-3 needs-validation" novalidate id="lado-derecho">
+            <div class="row mt-3">
+                <div class="col-md-9">
+                    <h2>Olvide mi Usuario o contraseña</h2>
+					<h4>Ingrese su correo electrónico para que le reenviemos su usuario</h4>  
+                </div>
+            </div>
+		    <form class="row mt-3 g-3 needs-validation" novalidate>
+                <!-- Grupo: Correo Electronico -->
+			    <div class="col-md-9 position-relative">
+			   	    <label for="correo" class="form-label">Correo Electrónico</label>
+				    <input type="email" class="form-control" name="correo" id="correo" placeholder="correo@correo.com" required>
+				    <div class="valid-tooltip">
+						OK
+                   </div>
+				   <div class="invalid-tooltip">
+						El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.
+                   </div>
+			    </div>
+
+				<div class="col-md-9 position-relative">
+		             <button type="submit" class="btn btn-primary">Reenviar</button>
+				</div>	 
+		    </form>
+		</form>
+        
+		<script src="js/registro.js"></script>
+    </div>
+</body>
+
+<footer>
+     
+</footer>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mingle</title>
+    <link rel="stylesheet" href="css/estilos-registro1.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Iconos -->
+</head>
+
+<header>
+
+</header>
+
+<body>
+    <div class="flecha-volver">
+        <a href="index.html"><i class='bx bx-left-arrow-alt'></i></a>
+    </div>
+    <div class="contenedor"> <!-- Contenedor padre que tiene a "lado izquierdo" y "lado derecho" -->
+        <div class="lado-izquierdo"> <!-- Contenedor de "info", que utilizamos para centrar-->
+            <div class="info"> <!-- Contenedor de los elementos -->
+                <h2>Unirme a Mingle</h2>
+                <p>Conéctate con personas que comparten tus mismos intereses.</p>
+            </div>
+        </div>
+        <div class="lado-derecho"> <!-- Contenedor derecho -->
+            <div class="formulario1"> <!-- Contenedor de los elementos -->
+                <h2>Crear una Cuenta</h2>
+                <form action="" class="formulario" id="formulario1">
+			            <!-- Grupo: Usuario -->
+			            <div class="formulario__grupo" id="grupo__usuario">
+			                <label for="usuario" class="formulario__label">Usuario</label>
+				            <div class="formulario__grupo-input">
+				    	        <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123">
+					            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+				            </div>
+				            <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			            </div>
+
+			            <!-- Grupo: Nombre -->
+			            <div class="formulario__grupo" id="grupo__nombre">
+				            <label for="nombre" class="formulario__label">Nombre</label>
+				            <div class="formulario__grupo-input">
+					            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+					            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+				            </div>
+				            <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			            </div>
+
+			            <!-- Grupo: Contraseña -->
+			            <div class="formulario__grupo" id="grupo__password">
+				            <label for="password" class="formulario__label">Contraseña</label>
+				            <div class="formulario__grupo-input">
+					            <input type="password" class="formulario__input" name="password" id="password">
+					            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+				            </div>
+				            <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			            </div>
+
+			            <!-- Grupo: Contraseña 2 -->
+			            <div class="formulario__grupo" id="grupo__password2">
+				            <label for="password2" class="formulario__label">Repetir Contraseña</label>
+				            <div class="formulario__grupo-input">
+					            <input type="password" class="formulario__input" name="password2" id="password2">
+					            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+				            </div>
+				            <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			            </div>
+
+			            <!-- Grupo: Correo Electronico -->
+			            <div class="formulario__grupo" id="grupo__correo">
+			   	            <label for="correo" class="formulario__label">Correo Electrónico</label>
+				            <div class="formulario__grupo-input">
+					            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+				            </div>
+				            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			            </div>
+
+			            <!-- Grupo: Teléfono -->
+			            <div class="formulario__grupo" id="grupo__telefono">
+				            <label for="telefono" class="formulario__label">Teléfono</label>
+				            <div class="formulario__grupo-input">
+					            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+					            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+				            </div>
+				            <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			            </div>
+
+			            <!-- Grupo: Terminos y Condiciones -->
+			            <div class="formulario__grupo" id="grupo__terminos">
+				            <label class="formulario__label">
+					        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					            Acepto los Terminos y Condiciones
+				            </label>
+			            </div>
+
+			            <div class="formulario__mensaje" id="formulario__mensaje">
+				            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			            </div>
+
+			            <div class="formulario__grupo formulario__grupo-btn-enviar">
+				        <button type="submit" class="formulario__btn">Enviar</button>
+				             <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			            </div>
+		        </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/formulario.js"></script>
+</body>
+
+<footer>
+
+</footer>
+
+</html>
