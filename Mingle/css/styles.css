@@ -1,0 +1,53 @@
+body {
+    font-size: 16px;
+    background-color: beige;
+}
+    
+#bannerSup {
+    background-color: #a6c0f8;
+}
+
+#portada {
+    background-image: url("../img/gente\ mirando.jpg");
+    background-size: cover;
+    width: auto;
+    padding: 10%;
+}
+
+h1 {
+    color: #6331c8;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: -20px;
+}
+
+#portada p {
+    color: #6331c8;
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.card:hover {
+    opacity: 0.7;
+}
+.card-text {
+    text-align: justify;
+}
+
+.nav-link {
+    font-weight: 600;
+}
+
+#txtComment {
+    resize: none;
+}
+
+
+@media(max-width: 576px){
+    .card-text {
+        font-size: 0.8rem ; 
+    }
+}
