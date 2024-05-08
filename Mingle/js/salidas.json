@@ -1,0 +1,31 @@
+{"docs":
+  [
+    {
+        "id": 1,
+        "actividad": "Paseo por Gral Rivas - Bs. As.",
+        "descripcion_actividad": "Pasamos el dia en el pueblo de Gral. Rivas",
+        "lugar": "Gral. Rivas - Bs. As.",
+        "dirección": "Gral. Rivas - Bs. As.",
+        "fecha_ini": "25/03/2024",
+        "video": "https://www.youtube.com/embed/ExhZn5_jFFI?si=A04v2mL2RKVIG8W-"
+    },
+    {
+        "id": 2,
+        "actividad": "Paseo por Recoleta - Bs. As.",
+        "descripcion_actividad": "Paseamos por el barrio mas turistico de Bs. As.",
+        "lugar": "Recoleta",
+        "dirección": "Barrio de Recolete",
+        "fecha_ini": "01/04/2024",
+        "video": "https://www.youtube.com/embed/_T_-W3I0K3U?si=t45JefPDgTZoaVyx"
+    },
+    {
+        "id": 3,
+        "actividad": "Visitando Retiro - Bs. As.",
+        "descripcion_actividad": "Paseamos por el barrio de Retiro",
+        "lugar": "Retiro",
+        "dirección": "Barrio de Retiro",
+        "fecha_ini": "15/04/2024",
+        "video": "https://www.youtube.com/embed/WoAttUixztw?si=UMj_sdksjZdZqmOW"
+    }
+  ]
+}  
