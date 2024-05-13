@@ -1,0 +1,44 @@
+{"docs":
+  [
+    {
+        "id": 1,
+        "user": "Felipe",
+        "nombre": "Felipe R. Castillo",
+        "email": "felcastillo3@hotmail.com",
+        "domicilio": "Mza.107-L.1-Bº Santa Lucia",
+        "ciudad": "Santiago del Estero",
+        "provincia": "Santiago del Estero",
+        "foto": "./img/nosotros2024.jpg"
+    },
+    {
+        "id": 2,
+        "user": "Rommy",
+        "nombre": "Rommy Choda",
+        "email": "Rommy.program@gmail.com",
+        "domicilio": "",
+        "ciudad": "Capital Federal",
+        "provincia": "Buenos Aires",
+        "foto": "./img/Rommy.jpg"
+    },
+    {
+        "id": 3,
+        "user": "Mau",
+        "nombre": "Mauricio Roja",
+        "email": "mauricioJroja@gmail.com",
+        "domicilio": "",
+        "ciudad": "Rosario",
+        "provincia": "Santa Fe",
+        "foto": "./img/Mauricio.jpg"
+    },
+    {
+        "id": 4,
+        "user": "Pablo",
+        "nombre": "Pablo Franco",
+        "email": "pabloafranco@hotmail.com",
+        "domicilio": "",
+        "ciudad": "Capital Federal",
+        "provincia": "Buenos Aires",
+        "foto": "./img/pablo_franco.jpg"
+    }
+  ]
+}  

@@ -43,11 +43,38 @@ cadfooter = `
             <li class="nav-item"><a href="index.html#quienesSomos" class="nav-link px-2 text-muted">Quienes Somos</a></li>
             <li class="nav-item"><a href="login1.html" class="nav-link px-2 text-muted">Inicio Sesión/Registrarse</a></li>
         </ul>
-        <p class="text-center text-muted">© <span id="currentYear"></span> <a href="#">Pythoner</a> para Codo a Codo </p>
+        <p class="text-center text-muted">© <span id="currentYear"></span> <a href="nosotros.html">Pythoner</a> para Codo a Codo </p>
     </footer >
 `    
-
+cad1 = `
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #5E2FCD;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+           <img src="img/logo mingle.jpg" width="80px" alt=""> 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-uto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#calendario"><i class="material-symbols-outlined">event_list</i>Eventos Próximos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#algunasSalidas"><i class="material-symbols-outlined">landslide</i>Algunas Salidas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#quienesSomos"><i class="material-symbols-outlined">groups</i>Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login1.html"><i class="material-symbols-outlined">person_edit</i>Inicio Sesión/Registrarse</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav >`
 
 document.querySelector("head").innerHTML = cadhead
 document.querySelector("header").innerHTML = cadheader
 document.querySelector("#footer").innerHTML = cadfooter
+document.querySelector(".Menu").innerHTML = cad1
