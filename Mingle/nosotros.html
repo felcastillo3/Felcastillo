@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+    </head>
+         
+    <body>
+        <!--Banner Superior-->
+        <header>
+            
+        </header>
+
+         <!-- Menu responsivo -->
+         <div class="Menu">
+            
+         </div>
+               
+        <!--Nosotros-->
+        <div id="app">
+            <div class="container">
+                <h1 class="display-3 mt-3 mb-3">Pythoner 2024</h1>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+                    <p class="display-5 mt-1 mb-2">Somos un grupo de estudio conformado en el ámbito del Curso de Codo a Codo 2024 - Full Stack Python - Comisión 24177.</p>
+                    <p class="display-6 mt-1 mb-2">email: <a class="display-6" href="mailto:pythoners2024@gmail.com">pythoners2024@gmail.com</a> </p>
+                </div>
+                <h2 class="display-2 mt-3 mb-3">Integrantes del grupo</h1>
+            
+                <div v-for="elemento in datos" class="tarjeta">
+                    <div class="col-sm-12 col-md-12 mb-3" >
+                        <div class="card-group">
+                            <div class="card shadow" id="foto">
+                                <div class="card-body">
+                                    <h5 class="text-center">Usuario: {{elemento.user}}</h5>
+                                    <img  :src="elemento.foto" class="card-img-bottom" :alt="elemento.user">
+                                </div>
+                            </div>
+                            <div class="card shadow" id="cuerpo">
+                                <form action="">
+                                    <p class="display-6 mt-1 mb-2 text-center">Datos Personales</p>
+                                    <p class="col-form-label">Apellido y Nombre: {{elemento.nombre}}</p>
+                                    <p class="col-form-label">Correo Electronico: {{elemento.email}}</p>
+                                    <p class="col-form-label">Ciudad: {{elemento.ciudad}}</p>
+                                    <p class="col-form-label">Provincia: {{elemento.provincia}}</p>
+                                    <p class="col-form-label">Otros Cursos: {{elemento.cursos}}</p>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>    
+                </div >
+            </div>
+        </div > 
+
+        <!--Footer-->    
+        <div class="row" id="footer">
+   
+        </div>
+     
+        <!-- Bootstrap -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <!-- Encabezados -->
+        <script src="js/encabezados.js"></script>    
+        <!-- Vue -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <!-- Custom Js -->
+        <script src="js/nosotros.js"></script>    
+    </body>
+</html>
+
+
+
