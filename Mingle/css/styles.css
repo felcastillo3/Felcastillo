@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "truculenta", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 body {
     font-size: 16px;
     background-color: beige;
@@ -21,9 +31,20 @@ h1 {
     margin-bottom: -20px;
 }
 
+h2 {
+    color: #6331c8;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: -20px;
+}
+
 #portada p {
     color: #6331c8;
     text-align: center;
+}
+
+#container id {
+    display: none !important;
 }
 
 .text-justify {
