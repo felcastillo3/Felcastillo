@@ -5,27 +5,27 @@
         "user": "Felipe",
         "nombre": "Felipe R. Castillo",
         "email": "felcastillo3@hotmail.com",
-        "domicilio": "Mza.107-L.1-Bº Santa Lucia",
+        "cursos": "Diplomatura en Ciencia de Datos e Inteligencia Artificial, Especialización en Gestión Pública y Datos",
         "ciudad": "Santiago del Estero",
         "provincia": "Santiago del Estero",
-        "foto": "./img/nosotros2024.jpg"
+        "foto": "./img/felipe2.jpeg"
     },
     {
         "id": 2,
         "user": "Rommy",
         "nombre": "Rommy Choda",
         "email": "Rommy.program@gmail.com",
-        "domicilio": "",
+        "cursos": "",
         "ciudad": "Capital Federal",
         "provincia": "Buenos Aires",
-        "foto": "./img/Rommy.jpg"
+        "foto": "./img/Rommy1.jpeg"
     },
     {
         "id": 3,
         "user": "Mau",
         "nombre": "Mauricio Roja",
         "email": "mauricioJroja@gmail.com",
-        "domicilio": "",
+        "cursos": "",
         "ciudad": "Rosario",
         "provincia": "Santa Fe",
         "foto": "./img/Mauricio.jpg"
@@ -35,7 +35,7 @@
         "user": "Pablo",
         "nombre": "Pablo Franco",
         "email": "pabloafranco@hotmail.com",
-        "domicilio": "",
+        "cursos": "",
         "ciudad": "Capital Federal",
         "provincia": "Buenos Aires",
         "foto": "./img/pablo_franco.jpg"

@@ -1,3 +1,4 @@
+// head //
 cadhead = `
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,6 +26,7 @@ cadhead = `
     <link rel="icon" href="./img/icon.png">
  `
 
+ // header //
 cadheader = `
     <div class="row text-center" id="bannerSup">
         <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
@@ -33,7 +35,7 @@ cadheader = `
     </div> 
 `
 
-
+// footer //
 cadfooter = `
     <footer class="py-3 mg-4" >
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -45,9 +47,11 @@ cadfooter = `
         </ul>
         <p class="text-center text-muted">© <span id="currentYear"></span> <a href="nosotros.html">Pythoner</a> para Codo a Codo </p>
     </footer >
-`    
+`
+
+// menu responsive //
 cad1 = `
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #5E2FCD;">
+<nav class="navbar navbar-expand-lg  navbar-dark" style="background-color: #5E2FCD;" id="menu">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
            <img src="img/logo mingle.jpg" width="80px" alt=""> 

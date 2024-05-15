@@ -27,3 +27,12 @@ created() {  // created() se ejecuta cada vez que se crea el objeto VUE
   this.fetchData(this.url)
 }
 }).mount('#app')
+
+const navEl = document.querySelector('.navbar')
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= 56) {
+    navEl.classList.add('fixed-top');
+  } else {
+    navEl.classList.remove('fixed-top');
+  }
+});

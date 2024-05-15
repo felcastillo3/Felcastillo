@@ -3,6 +3,15 @@ window.addEventListener("load",()=>{
     currentYear.innerText=currentDate.getFullYear()
 })
 
+const navEl = document.querySelector('.navbar')
+window.addEventListener('scroll', () => {
+    if (window.scrollY >= 56) {
+        navEl.classList.add('fixed-top');
+    } else {
+        navEl.classList.remove('fixed-top');
+    }
+});
+
 
 cadquienes = `
     <h1 class="display-3 mt-3 mb-3">Quienes Somos</h1> 
@@ -62,7 +71,7 @@ fetch(url)
                             <p hidden id="id">${elemento.id}</p>
                             <p class="card-text text-center">${elemento.fecha_ini}</p>
 
-                            <a href="#" class="btn btn-info">Detalles</a>
+                            <a href="detalles.html? id_evento=${elemento.id}" class="btn btn-info">Detalles</a>
                             <a href="#" class="btn btn-info">Quiero Participar</a>
                         </div>
                     </div>
@@ -107,7 +116,5 @@ fetch(url1)
         document.querySelector("#Salidas").innerHTML = cad2
     }
 );    
-
-
 
 
