@@ -14,7 +14,7 @@
 </head>
 
 <header>
-    <div class"row" id="flecha-volver">
+    <div class="row" id="flecha-volver">
         <a href="index.html"><i class='bx bx-left-arrow-alt'></i></a>
     </div> 
 </header>
@@ -23,7 +23,7 @@
     <div class="container" id="contenedor"> <!-- Contenedor padre que tiene a "lado izquierdo" y "lado derecho" -->
         
 		<form action="registro2.html" class="row g-3" id="lado-izquierdo" >
-			<div class="col-3" id="info"> <!-- Contenedor de "info", que utilizamos para centrar-->
+			<div class="col-sm-12 col-md-6 mb-3" id="info"> <!-- Contenedor de "info", que utilizamos para centrar-->
                 <h2>Unirme a Mingle</h2>
                 <p>Conéctate con personas que comparten tus mismos intereses.</p>
 			    <button type="submit" class="btn btn-primary">Registrarse</button>
@@ -32,13 +32,13 @@
 		<!-- lado derecho lo hacemos con validación de boostrap, sacando la validación por navegador -->
 		<form class="row g-3 needs-validation" novalidate id="lado-derecho">
             <div class="row mt-3">
-                <div class="col-md-9">
+                <div class="col-sm-12 col-md-9 mb-3">
                     <h2>Login</h2>  
                 </div>
             </div>
 		    <form class="row mt-3 g-3 needs-validation" novalidate>
                 <!-- Grupo: Usuario -->
-			    <div class="col-md-9 position-relative">
+			    <div class="col-sm-12 col-md-9 position-relative">
 			        <label for="usuario" class="form-label">Usuario</label>
 				    <input type="text" class="form-control" name="usuario" id="usuario" placeholder="john123" required>
 					<a href="reingresar.html">¿Olvido su Usuario o Contraseña?</a>
@@ -51,7 +51,7 @@
                 </div> 
 
 				<!-- Grupo: Contraseña -->
-			    <div class="col-md-9 position-relative">
+			    <div class="col-sm-12 col-md-9 position-relative">
 				    <label for="password" class="form-label">Contraseña</label>
 				    <input type="password" class="form-control" name="password" id="password" required>
 					<div class="valid-tooltip">
@@ -63,7 +63,7 @@
 			    </div>
 
 				
-				<div class="col-md-9 position-relative">
+				<div class="col-sm-12 col-md-9 position-relative">
 		             <button type="submit" class="btn btn-primary">Ingresar</button>
 				</div>	 
 		    </form>
