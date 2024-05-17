@@ -112,13 +112,29 @@ body {
 
 /* ----- -----  Mediaqueries ----- ----- */
 @media screen and (max-width: 576px) {
-   #lado-izquierdo {
-      width: 100%;
+    #contenedor {
+        display: block;
+    }
 
-    }   
-    #lado-derecho {
+    #lado-izquierdo {
+        display: block;
         width: 100%;
-    
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        padding-bottom: 10px;
+        padding-top: 3px;
+    }
+
+    #lado-derecho {
+        display: block;
+        width: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 25px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 25px;
+        padding-bottom: 10px;
     }
 
 }
