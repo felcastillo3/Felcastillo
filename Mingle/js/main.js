@@ -1,8 +1,10 @@
+/*Pongo el año actual en el footer*/
 window.addEventListener("load",()=>{
     const currentDate= new Date();
     currentYear.innerText=currentDate.getFullYear()
 })
 
+/*Pego el menu al top cuando se haga scroll hacia abajo*/
 const navEl = document.querySelector('.navbar')
 window.addEventListener('scroll', () => {
     if (window.scrollY >= 56) {
@@ -12,7 +14,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-
+/*Quienes somos*/
 cadquienes = `
     <h1 class="display-3 mt-3 mb-3">Quienes Somos</h1> 
     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
@@ -21,9 +23,6 @@ cadquienes = `
         <p class="display-5 mt-3 mb-3">En Mingle garantizamos la seguridad de que vas a conocer en persona a la misma con la que te estás mensajeando. Y para ello tenemos un riguroso filtro de ingreso miembros.</p> 
     </div>
 `    
-
-
-
 document.querySelector("#quienesSomos").innerHTML = cadquienes
 
 
@@ -71,8 +70,8 @@ fetch(url)
                             <p hidden id="id">${elemento.id}</p>
                             <p class="card-text text-center">${elemento.fecha_ini}</p>
 
-                            <a href="detalles.html? id_evento=${elemento.id}" class="btn btn-info">Detalles</a>
-                            <a href="#" class="btn btn-info">Quiero Participar</a>
+                            <a href="detalles.html?id_evento=${elemento.id}" type="submit" class="btn btn-info">Detalles</a>
+                            <a href="aviso.html" class="btn btn-info">Quiero Participar</a>
                         </div>
                     </div>
                     <div class="card shadow">
