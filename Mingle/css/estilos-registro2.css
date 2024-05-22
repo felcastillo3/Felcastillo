@@ -8,41 +8,6 @@
     font-style: normal;
 }
 
-body {
-    display: flex;
-    align-items: center; /* Alineamos verticalmente */
-    justify-content: center; /* Alineamos horizontalmente */
-    height: 100vh;
-    background-image: url('../img/fondo.jpg');
-    background-size: cover;      /* La imagen se ajusta al tamañano del contenedor */
-    background-position: center; /* La imagen se centra en el contenedor */
-}
-
-#flecha-volver {
-    position: absolute;
-    top: 2%;
-    left: 1.2%;
-    color: #525558;
-    background-color: white;
-    border-radius: 10px;
-    font-size: x-large;
-    padding: 7px;
-}
-
-#flecha-volver i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    font-weight: 700;
-}
-
-#flecha-volver:hover{
-    background-color: #c2e0fd;
-    transition: 400ms ease;
-}
-
-
 #contenedor {   /* Contenedor padre de "lado-izquierdo" y "lado-derecho" */
     display: flex;     /* Utilizamos flex para alinear los contenedores verticalmente */
     max-width: 100rem;  /* Ancho maximo, para que la caja no crezca al momento de modificar elementos */
@@ -54,6 +19,7 @@ body {
     box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.48);
     
     margin: 1rem;
+    margin-top: 40px;
 }
 
 #lado-izquierdo {
@@ -64,6 +30,7 @@ body {
     background-color: #c2e0fd;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    
 }
 
 #info {
@@ -135,6 +102,17 @@ body {
         border-top-left-radius: 0px;
         border-bottom-left-radius: 25px;
         padding-bottom: 10px;
+    }
+
+    #info {
+        width: 100%;
+        padding: 0.2rem;
+        margin-top: 60px;
+        /* Padding entre los elementos y contenedor */
+    }
+
+    #crear {
+        margin-top: 60px;
     }
 
 }
