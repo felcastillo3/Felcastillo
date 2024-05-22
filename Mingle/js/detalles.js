@@ -73,16 +73,16 @@ fetch(url)
                             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">    
                                 <form action="">
                                     <h2 class="display-6 mt-1 mb-2 text-center">Descripción Evento</h2>
-                                    <p class="col-form-label">Descripcion_actividad: ${elemento.descripcion_actividad}</p>
-                                    <p class="col-form-label">Tipo_actividad: ${elemento.tipo_actividad}</p>
-                                    <p class="col-form-label">Disciplina: ${elemento.disciplina}</p>
-                                    <p class="col-form-label">Lugar: ${elemento.lugar}</p>
-                                    <p class="col-form-label">Dirección: ${elemento.dirección}</p>
-                                    <p class="col-form-label">Barrio: ${elemento.barrio}</p>
-                                    <p class="col-form-label">Fecha: ${elemento.fecha_ini}</p>
-                                    <p class="col-form-label">Horario: ${elemento.horario}</p>
-                                    <p class="col-form-label">Amenities: ${elemento.amenities}</p>
-                                    <p class="col-form-label">Costo: $ ${elemento.costo}</p>
+                                    <p class="col-form-label display-7">Descripcion_actividad: ${elemento.descripcion_actividad}</p>
+                                    <p class="col-form-label display-7">Tipo_actividad: ${elemento.tipo_actividad}</p>
+                                    <p class="col-form-label display-7">Disciplina: ${elemento.disciplina}</p>
+                                    <p class="col-form-label display-7">Lugar: ${elemento.lugar}</p>
+                                    <p class="col-form-label display-7">Dirección: ${elemento.dirección}</p>
+                                    <p class="col-form-label display-7">Barrio: ${elemento.barrio}</p>
+                                    <p class="col-form-label display-7">Fecha: ${elemento.fecha_ini}</p>
+                                    <p class="col-form-label display-7">Horario: ${elemento.horario}</p>
+                                    <p class="col-form-label display-7">Amenities: ${elemento.amenities}</p>
+                                    <p class="col-form-label display-7">Costo: $ ${elemento.costo}</p>
                                     <div class="text-center mt-5 mb-2">
                                         <a href="index.html#calendario" class="btn btn-primary">Volver</a>
                                         <a href="aviso.html" class="btn btn-primary">Quiero Anotarme</a>

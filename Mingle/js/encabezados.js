@@ -25,6 +25,31 @@ cadhead = `
     <!-- Icono de la pagina -->
     <link rel="icon" href="./img/icon.png">
  `
+ let quien = localStorage.getItem("quienllama");
+ if (quien == "nosotros.html") {
+    cadhead = cadhead + `
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/nosotros.css">
+    `
+ }
+if (quien == "login1.html") {
+    cadhead = cadhead + `
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/estilos-login1.css">
+    `
+} 
+if (quien == "registro2.html") {
+    cadhead = cadhead + `
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/estilos-registro2.css">
+    `
+} 
+if (quien == "reingresar.html") {
+    cadhead = cadhead + `
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/estilos-login1.css">
+    `
+}   
 
  // header //
 cadheader = `

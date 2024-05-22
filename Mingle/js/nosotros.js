@@ -28,6 +28,7 @@ created() {  // created() se ejecuta cada vez que se crea el objeto VUE
 }
 }).mount('#app')
 
+/*Pego el menu al top cuando se haga scroll hacia abajo*/
 const navEl = document.querySelector('.navbar')
 window.addEventListener('scroll', () => {
   if (window.scrollY >= 56) {

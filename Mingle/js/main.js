@@ -19,8 +19,8 @@ cadquienes = `
     <h1 class="display-3 mt-3 mb-3">Quienes Somos</h1> 
     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
         <h2 class="display-2 mt-3 mb-3">Mingle tu Web para encuentros grupales</h2>
-        <p class="display-5 mt-3 mb-3">Nuestro objetivo es que conozcas un grupo de gente que le guste lo mismo que a vos y organicen salidas en grupo. Cenas, recitales, bailes, caminatas, viajes lo que surja!</p>
-        <p class="display-5 mt-3 mb-3">En Mingle garantizamos la seguridad de que vas a conocer en persona a la misma con la que te estás mensajeando. Y para ello tenemos un riguroso filtro de ingreso miembros.</p> 
+        <p class="display-5 mt-3 mb-3 pd-10">Nuestro objetivo es que conozcas un grupo de gente que le guste lo mismo que a vos y organicen salidas en grupo. Cenas, recitales, bailes, caminatas, viajes lo que surja!</p>
+        <p class="display-5 mt-3 mb-3 pd-10">En Mingle garantizamos la seguridad de que vas a conocer en persona a la misma con la que te estás mensajeando. Y para ello tenemos un riguroso filtro de ingreso miembros.</p> 
     </div>
 `    
 document.querySelector("#quienesSomos").innerHTML = cadquienes
@@ -45,7 +45,7 @@ fetch(url)
                 <div class="card-group">
                     <div class="card shadow">
                         <div class="card-body">
-                            <h5 class="card-title">${elemento.actividad}</h5>`
+                            <h5 class="card-title ">${elemento.actividad}</h5>`
                             if (elemento.tipo_actividad == "Función") {
                                 cad = cad + `
                                 <img src="img/Sala_de_cine.jpg" class="card-img-bottom" alt="">`
