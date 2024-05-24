@@ -79,7 +79,7 @@ cad1 = `
 <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color: #5E2FCD;" id="menu">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-           <img src="img/logo mingle.jpg" width="80px" alt=""> 
+           <img src="img/logo_mingle_menu.png" width="80px" alt=""> 
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
