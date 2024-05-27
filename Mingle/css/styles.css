@@ -8,38 +8,78 @@
     text-decoration: none;
 }
 
+.navbar{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.65);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.65);
+    }
+
+.navbar a {
+    display: flex;
+    transition: all ease 300ms;
+    margin-right: 1.5rem;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+}
+
 body {
     font-size: 16px;
-    background-color: beige;
+    background-color:aliceblue;
 }
     
 #bannerSup {
     background-color: #a6c0f8;
+    
 }
+
+
 
 #portada {
     background-image: url("../img/gente\ mirando.jpg");
-    background-size: cover;
+    background-size:cover;	
     width: auto;
     padding: 10%;
+    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+    margin-bottom: 80px;
+    
 }
 
+#portada h1{
+    font-weight: 630;
+    /* Gradiente de color para texto */
+    background: #5632D9;
+    background: linear-gradient(to bottom, #5632D9 29%, #3D79F2 43%, #D95B89 66%, #F26666 79%, #F2AF5C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+
+#portada p {
+    font-size: 2.5rem;
+    margin-top: 0.8rem;
+}
+
+
+
 h1 {
-    color: #6331c8;
+    color: #5632D9;
     text-align: center;
     margin-top: -50px;
     margin-bottom: -20px;
 }
 
 h2 {
-    color: #6331c8;
+    color: #5632D9;
     text-align: center;
     margin-top: -50px;
     margin-bottom: -20px;
 }
 
 #portada p {
-    color: #6331c8;
+    color: #5632D9;
     text-align: center;
 }
 
@@ -66,6 +106,15 @@ h2 {
     resize: none;
 }
 
+#bannerSup {
+    justify-content: center;
+}
+
+#quienes-somos p{
+    font-size: xx-large;
+    color: #3c3e40;
+    
+}
 
 @media(max-width: 576px){
     .card-text {
