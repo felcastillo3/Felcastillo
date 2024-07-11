@@ -26,6 +26,9 @@ cadhead = `
     <link rel="icon" href="./img/icon.png">
  `
  let quien = localStorage.getItem("quienllama");
+ let usuario = localStorage.getItem("usuario");
+ let pass = localStorage.getItem("pass");
+ let sesion = localStorage.getItem("sesion");
  if (quien == "nosotros.html") {
     cadhead = cadhead + `
     <!-- CSS personalizado -->
@@ -54,8 +57,25 @@ if (quien == "reingresar.html") {
  // header //
 cadheader = `
     <div class="row text-center" id="bannerSup">
-        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-3">
             <img src="img/logoMingle.png" height="150px" class="mx-auto d-block">
+        </div>
+        <div class="col-2 mb-3">
+            <div class="card shadow" id="foto">
+                <div class="card-body">`
+                    if (usuario == "admin" || usuario != "") {
+                        cadheader = cadheader + `
+                        <p class="text-center">Usuario: ` + usuario  
+                        cadheader = cadheader + ` </p> 
+                        <a href="unlogin.html">Cerrar Sesión</a>`
+                    }else{
+                        cadheader = cadheader + `
+                        <p class="text-center">Usuario: </p>
+                        <a href="login1.html">Inicio Sesión</a>`
+                    }
+                    cadheader = cadheader + `     
+                </div>
+            </div>
         </div>
     </div> 
 `
@@ -94,10 +114,34 @@ cad1 = `
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.html#quienesSomos"><i class="material-symbols-outlined">groups</i>Quienes Somos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login1.html"><i class="material-symbols-outlined">person_edit</i>Inicio Sesión/Registrarse</a>
-                </li>
+                </li>`
+                if ( sesion == "0") {
+                    cad1 = cad1 + `
+                    <li class="nav-item">
+                        <a class="nav-link" href="login1.html"><i class="material-symbols-outlined">person_edit</i>Inicio Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="usuario_nuevo.html"><i class="material-symbols-outlined">person_add</i>Registrarse</a>
+                    </li>`
+                }
+                if (usuario == "admin") {
+                    cad1 = cad1 + `
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Administración
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="usuarios.html">Usuarios</a></li>
+                                <li><a class="dropdown-item" href="periodos.html">Periodos</a></li>
+                                <li><a class="dropdown-item" href="#">Encuentros</a></li>
+                                <li><a class="dropdown-item" href="#">Salidas</a></li>
+                                <li><a class="dropdown-item" href="#">Membresias</a></li>
+                                <li><a class="dropdown-item" href="tiposactividad.html">Tipos Actividad</a></li>
+                            </ul>
+                        </li>
+                        `
+                }                   
+                cad1 = cad1 + `
             </ul>
         </div>
     </div>
@@ -107,3 +151,5 @@ document.querySelector("head").innerHTML = cadhead
 document.querySelector("header").innerHTML = cadheader
 document.querySelector("#footer").innerHTML = cadfooter
 document.querySelector(".Menu").innerHTML = cad1
+
+

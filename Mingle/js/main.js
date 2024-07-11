@@ -15,7 +15,7 @@ window.addEventListener('scroll', () => {
 });
 
 /*Quienes somos*/
-cadquienes = `
+let cadquienes = `
     <h1 class="display-3 mt-3 mb-3">Quienes Somos</h1> 
     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
         <h2 class="display-2 mt-3 mb-3">Mingle tu Web para encuentros grupales</h2>
