@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+</head>
+
+<body>
+	<!--Banner Superior-->
+  <header>
+            
+  </header>
+
+    <!-- Menu responsivo -->
+  <div class="Menu">
+            
+  </div>
+
+  <main>
+    <br>
+    <br>
+    <br>
+    <div class="container" id="app">
+      <form  style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
+          <h1>Alta de Tipos de Actividad</h1>
+          <br>
+          <br>  
+          <div class="mb-3">
+            <label for="user">Descripcion:</label>
+            <input type="text" name="descripcion" class="form-control" id="descripcion" v-model="descripcion">
+          </div>
+          <button type="button" class="btn btn-success" v-on:click="grabar()">Grabar</button>
+          <a href="./tiposactividad.html" type="button" class="btn btn-info">Volver</a>
+      </form>
+    </div>
+  </main>
+
+
+	<!--Footer-->    
+  <div class="row" id="footer">
+   
+  </div>
+      
+  <!-- grabo una variable local para indicar quien llama los encabezados y poder usar diferentes archivos css -->
+  <script>
+      localStorage.setItem("quienllama","tiposactividad_nuevo.html")
+  </script>    
+  <!-- Encabezados -->
+  <script src="./js/encabezados.js"></script>    
+	<!-- Custom Js -->
+	<script src="./js/main.js"></script>
+  <!-- Vue Js -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="./js/tiposactividad.js"></script>
+   
+</body>
+
+</html>

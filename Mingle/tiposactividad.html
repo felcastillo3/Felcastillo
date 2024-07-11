@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+</head>
+
+<body>
+	<!--Banner Superior-->
+    <header>
+            
+    </header>
+
+    <!-- Menu responsivo -->
+    <div class="Menu">
+            
+    </div>
+
+    <main>
+        <br>
+        <br>
+        <br>
+        <div id="app" class="container">
+            <h1>Tipos de Actividad</h1>
+            <br>
+            <a  class="btn btn-primary" href="tiposactividad_nuevo.html">Nuevo</a>
+            <a  class="btn btn-info" href="index.html">Volver</a>
+            <br><br>
+            <div v-if="error">
+                <p>Lo sentimos , ........</p>
+            </div>
+            <div v-else>
+                <section v-if="cargando">
+                    <div class="spinner-border"></div>
+                    <p>Cargando .....</p>
+                </section>
+                <section v-else>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Descripción</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class=""  v-for="tipoactividad in tiposactividad">
+                                    <td scope="row">{{tipoactividad.id}}</td>
+                                    <td>{{tipoactividad.descripcion}}</td>
+                                    <td>
+                  			            <a class="btn btn-primary" :href="'tiposactividad_update.html?id='+ tipoactividad.id" >Editar</a>
+                                        <button type="button" class="btn btn-danger" v-on:click="eliminar(tipoactividad.id)" >Eliminar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+	<!--Footer-->    
+    <div class="row" id="footer">
+   
+    </div>
+      
+    <!-- grabo una variable local para indicar quien llama los encabezados y poder usar diferentes archivos css -->
+    <script>
+        localStorage.setItem("quienllama","tiposactividad.html")
+    </script>    
+    <!-- Encabezados -->
+    <script src="./js/encabezados.js"></script>    
+	<!-- Custom Js -->
+	<script src="./js/main.js"></script>
+    <!-- Vue Js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+    <script src="./js/tiposactividad.js"></script>
+   
+</body>
+</html>
+

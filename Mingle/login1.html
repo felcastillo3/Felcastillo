@@ -18,53 +18,40 @@
     </div>
                
     <!--Login-->
-    <div class="container" id="contenedor"> <!-- Contenedor padre que tiene a "lado izquierdo" y "lado derecho" -->
+    <div class="container" id="contenedor"> 
         
-		<form action="registro2.html" class="row g-3" id="lado-izquierdo" >
-			<div class="col-sm-12 col-md-6 mb-3" id="info"> <!-- Contenedor de "info", que utilizamos para centrar-->
-                <h2>Unirme a Mingle</h2>
-                <p>Conéctate con personas que comparten tus mismos intereses.</p>
-			    <button type="submit" class="btn btn-primary">Registrarse</button>
-            </div>
-		</form>
-		<!-- lado derecho lo hacemos con validación de boostrap, sacando la validación por navegador -->
-		<form class="row g-3 needs-validation" novalidate id="lado-derecho">
-            <div class="row mt-3">
-                <div class="col-sm-12 col-md-9 mb-3">
-                    <h2>Login</h2>  
+	    <form id="formulario" class="row mt-3 g-3 needs-validation" novalidate>
+			<br>
+			<br>
+			<h2>Login</h2>
+            <!-- Grupo: Usuario -->
+		    <div class="col-sm-12 col-md-9 position-relative mb-4">
+		        <label for="usuario" class="form-label">Usuario</label>
+			    <input type="text" class="form-control" name="usuario" id="usuario" placeholder="john123" required>
+				<a href="reingresar.html">¿Olvido su Usuario o Contraseña?</a>
+				<div class="valid-tooltip">
+					OK
+    	        </div>
+				<div class="invalid-tooltip">
+					El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.
                 </div>
-            </div>
-		    <form class="row mt-3 g-3 needs-validation" novalidate>
-                <!-- Grupo: Usuario -->
-			    <div class="col-sm-12 col-md-9 position-relative">
-			        <label for="usuario" class="form-label">Usuario</label>
-				    <input type="text" class="form-control" name="usuario" id="usuario" placeholder="john123" required>
-					<a href="reingresar.html">¿Olvido su Usuario o Contraseña?</a>
-					<div class="valid-tooltip">
-						OK
-                   </div>
-				   <div class="invalid-tooltip">
-						El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.
-                   </div>
-                </div> 
+            </div> 
 
-				<!-- Grupo: Contraseña -->
-			    <div class="col-sm-12 col-md-9 position-relative">
-				    <label for="password" class="form-label">Contraseña</label>
-				    <input type="password" class="form-control" name="password" id="password" required>
-					<div class="valid-tooltip">
-						OK
-                   </div>
-				   <div class="invalid-tooltip">
-						La contraseña tiene que ser de 4 a 12 dígitos.
-                   </div>
-			    </div>
-
-				
-				<div class="col-sm-12 col-md-9 position-relative">
-		             <button type="submit" class="btn btn-primary">Ingresar</button>
-				</div>	 
-		    </form>
+			<!-- Grupo: Contraseña -->
+			<div class="col-sm-12 col-md-9 position-relative mb-4">
+				<label for="password" class="form-label">Contraseña</label>
+				<input type="password" class="form-control" name="pass" id="password" required>
+				<div class="valid-tooltip">
+					OK
+                </div>
+				<div class="invalid-tooltip">
+					La contraseña tiene que ser de 4 a 12 dígitos.
+                </div>
+			</div>
+	
+			<div class="col-sm-12 col-md-9 position-relative mb-4">
+				<button type="submit" class="btn btn-primary">Ingresar</button>
+	     	</div>	 
 		</form>
 	</div>
 		
@@ -82,7 +69,9 @@
     <script src="js/encabezados.js"></script>    
 	<!-- Custom Js -->
 	<script src="js/registro.js"></script>
-    
+	<!-- control usuario Js -->
+	<script src="js/control_usuario.js"></script>
+	    
 </body>
 
 <footer>

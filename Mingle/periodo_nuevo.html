@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+</head>
+
+<body>
+	<!--Banner Superior-->
+  <header>
+            
+  </header>
+
+    <!-- Menu responsivo -->
+  <div class="Menu">
+            
+  </div>
+
+  <main>
+    <br>
+    <br>
+    <br>
+    <div class="container" id="app">
+      <form  style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
+          <h1>Alta de Periodo</h1>
+          <br>
+          <br>  
+          <div class="mb-3">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" v-model="nombre">
+          </div>
+          <div class="mb-3">
+            <label for="mes">Mes:</label>
+            <input type="number" name="mes" id="mes" v-model="mes">
+          </div>
+          <div class="mb-3">
+            <label for="anio">Año:</label>
+            <input type="number" name="anio" id="anio" v-model="anio">
+          </div>
+          <button type="button" class="btn btn-success" v-on:click="grabar()">Grabar</button>
+          <a href="./periodos.html" type="button" class="btn btn-info">Volver</a>
+      </form>
+    </div>
+  </main>
+
+
+	<!--Footer-->    
+    <div class="row" id="footer">
+   
+    </div>
+      
+    <!-- grabo una variable local para indicar quien llama los encabezados y poder usar diferentes archivos css -->
+    <script>
+        localStorage.setItem("quienllama","periodo_nuevo.html")
+    </script>    
+    <!-- Encabezados -->
+    <script src="./js/encabezados.js"></script>    
+	<!-- Custom Js -->
+	<script src="./js/registro.js"></script>
+  <!-- Vue Js -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="./js/periodos.js"></script>
+   
+</body>
+
+</html>

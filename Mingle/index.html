@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
     <head>
         
     </head>
@@ -48,6 +48,12 @@
             crossorigin="anonymous"></script>
         <!-- grabo una variable local para indicar quien llama los encabezados y poder usar diferentes archivos css -->
         <script>
+            let ses = localStorage.getItem("sesion");
+            if (ses != "1") {
+                localStorage.setItem("usuario","")
+                localStorage.setItem("pass","")
+                localStorage.setItem("sesion","0")
+            }
             localStorage.setItem("quienllama","index.html")
         </script>
         <!-- Encabezados -->
